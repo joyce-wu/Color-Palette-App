@@ -1,0 +1,2 @@
+rootProject.name='ColorPaletteApp'
+include ':app'

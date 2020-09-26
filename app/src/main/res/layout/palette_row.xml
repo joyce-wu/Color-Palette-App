@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="center"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/lightVibrantSwatch"/>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/vibrantSwatch"/>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/darkVibrantSwatch"/>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/lightMutedSwatch"/>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/mutedSwatch"/>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="10dp"
+                android:id="@+id/darkMutedSwatch"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="#FFFFFF"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000"
+
+                    android:text="Delete"/>
+
+                <Button
+                    android:id="@+id/btnMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF"
+                    android:layout_margin="5dp"
+                    android:text="See More"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
